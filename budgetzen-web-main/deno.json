@@ -1,0 +1,43 @@
+{
+  "fmt": {
+    "useTabs": false,
+    "lineWidth": 120,
+    "indentWidth": 2,
+    "singleQuote": true,
+    "proseWrap": "preserve",
+    "exclude": [
+      "public/js/sweetalert.js"
+    ]
+  },
+  "lint": {
+    "rules": {
+      "exclude": [
+        "no-explicit-any",
+        "no-window-prefix",
+        "no-window"
+      ]
+    },
+    "exclude": [
+      "public/js/sweetalert.js"
+    ]
+  },
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "dom.asynciterable",
+      "deno.ns"
+    ]
+  },
+  "lock": false,
+  "imports": {
+    "/": "./",
+    "./": "./",
+
+    "std/assert/equals": "jsr:@std/assert@1.0.6/equals",
+    "std/assert/not-equals": "jsr:@std/assert@1.0.6/not-equals",
+    "std/http/file-server": "jsr:@std/http@1.0.7/file-server",
+    "std/dotenv/load": "jsr:@std/dotenv@0.225.2/load",
+    "deno/emit": "jsr:@deno/emit@0.45.0"
+  }
+}
